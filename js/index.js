@@ -12,7 +12,8 @@ function tipUsername() {
   elMsg.className = 'tip';                       
   elMsg.innerHTML = 'Username must be at least 5 characters'; 
 }
-
+var info = document.getElementByClassName('info');
+for (var i =0; i < infoElements.length; i++) info.push(infoElements[i].value);
 var el = document.getElementById('username');     
 var elMsg = document.getElementById('feedback');  
 

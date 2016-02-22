@@ -1,0 +1,46 @@
+body{
+	background-color: #272432;
+}
+nav{
+	background-color: #c6bbcc;
+	border: 3px double #654577;
+	border-radius: 15px;
+	padding: 2%;
+}
+a{
+	text-decoration: none;
+	color:#1c0c25;
+}
+ul li{
+	text-align: center;
+	margin: 5px;
+	display: inline-block;
+	font-family: arial;
+}
+
+img{
+	display: block;
+	margin:auto;
+	opacity: .5;
+
+}
+
+ul li ul{
+	display: none;
+	font-size: 12px;
+}
+
+ul li:hover ul{
+	display: block;
+	text-decoration: line-through;
+
+}
+h1{
+	font-family: helvetica;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+h1:hover{
+	text-decoration: line-through;
+}

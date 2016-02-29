@@ -1,0 +1,49 @@
+#eightBall {
+  width:200px;
+  height:200px;
+  background-color:#cdcdcd;
+  border-radius:50%;
+  margin:20px auto;
+  box-shadow: inset -25px -25px 55px 65px #000;
+  position:relative;
+  
+}
+#eightBall span {
+  diplay:block;
+  background-color: #fff;
+  border:#cdcdcd solid 2px;;
+  border-radius:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:12px;
+  line-height:10px;
+  padding:12px 10px 11px 15px;
+  position:absolute;
+  top:44px; left:70px;
+  transform:rotate(-22deg);
+  -ms-transform:rotate(-22deg); /* IE 9 */
+  -webkit-transform:rotate(-22deg); /* Safari and Chrome */
+}
+
+
+button{
+   background-color: aquamarine;
+    border: 3px double black;
+    position: relative;
+    display:block;
+margin: 10px auto 10px auto;
+width: 80px;
+    height: 40px;
+}
+
+input{
+    display:block;
+margin: 10px auto 10px auto;
+    width: 300px;
+    height: 30px;
+    border: 3px solid black;
+    padding: 2px;
+    text-align: center;
+
+}
+

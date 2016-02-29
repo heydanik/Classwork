@@ -9,20 +9,21 @@
   
 }
 #eightBall span {
+  max-width: 50%;
   diplay:block;
   background-color: #fff;
-  border:#cdcdcd solid 2px;;
+  border:#cdcdcd solid 5px;;
   border-radius:50%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight:bold;
-  font-size:12px;
-  line-height:10px;
+  font-size:15px;
+  line-height:19px;
   padding:12px 10px 11px 15px;
   position:absolute;
-  top:44px; left:70px;
-  transform:rotate(-22deg);
-  -ms-transform:rotate(-22deg); /* IE 9 */
-  -webkit-transform:rotate(-22deg); /* Safari and Chrome */
+  top:74px; left:70px;
+  transform:rotate(-12deg);
+  -ms-transform:rotate(-12deg); /* IE 9 */
+  -webkit-transform:rotate(-12deg); /* Safari and Chrome */
 }
 
 

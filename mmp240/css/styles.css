@@ -1,5 +1,27 @@
+@media (min-width: 1200px) {
+    .navbar {
+        background: #c4dfe2;  
+    }
+}
+
+/* Anything Smaller than Large  */
+@media (max-width: 1199px) {
+    .navbar {
+        background: #ffc7b5;
+    }
+}
+
+
 img {
     width:100%;
+    -webkit-filter: blur(1px) contrast(1.9) opacity(0.4) sepia(0.6);
+   
+
+}
+img:hover{
+    -webkit-filter: blur(0px) contrast(1) opacity(1) sepia(1);
+    transition: .5s;
+
 }
 
 body {
@@ -22,10 +44,7 @@ h1{
     font-family: dryBrush;
 }
 
-#videos{
-	margin-left: 5px;
-    bottom: 10%;
-}
+
 
 .form-wrapper {
   

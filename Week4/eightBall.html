@@ -7,33 +7,20 @@
 		
       <script type = "text/javascript" 
          src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-<<<<<<< HEAD
+        
     </head>
  <body>
 <div id="container">
-    <div id ="eightBall"></div>
+    <div id ="eightBall"><span id="span"></span></div>
     <input type="text" placeholder="What do you want to know?">
     <button id="answerButton">Click Me</button>
-
+</div>
  </body>   
-</div>
-<script src="jquery.js"></script>    
-=======
-
-    </head>
- <body>
-<div id="container">
-    <div id ="eightBall"><span id="span">8</span></div>
-    <input type="text" placeholder="What do you want to know?">
-    <button id="answerButton">Click Me</button>
-</div>
- </body>
 
    <script>
 $( '#answerButton' ).click(function() {
-  $( "#eightBall" ).effect( "shake" );
+  $( "#eightBall" ).effect( "shake",{times:4}, 1000 );
 });
 </script>
->>>>>>> origin/master
 <script src="eightBall.js"></script>   
 </html>

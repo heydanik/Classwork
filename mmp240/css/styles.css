@@ -1,0 +1,119 @@
+@media (min-width: 1200px) {
+    .navbar {
+        background: #c4dfe2;
+    }
+}
+
+/* Anything Smaller than Large  */
+@media (max-width: 1199px) {
+    .navbar {
+        background: #ffc7b5;
+    }
+}
+
+
+img {
+    width:100%;
+    -webkit-filter: blur(1px) contrast(1.9) opacity(0.4) sepia(0.6);
+
+
+}
+img:hover{
+    -webkit-filter: blur(0px) contrast(1) opacity(1) sepia(1);
+    transition: .5s;
+
+}
+
+body {
+    padding-top: 70px;
+}
+
+
+footer {
+    position:relative;
+    bottom:0;
+    border-top: 2px solid black;
+    width: 80%;
+}
+
+
+
+
+h1{
+	text-align: center;
+    font-family: dryBrush;
+}
+
+
+
+.form-wrapper {
+
+    margin: 0 auto;
+    position: relative;
+    width: 90px;
+}
+
+form {
+    padding: 12px 20px 0;
+}
+
+.form-item {
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.form-item input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #000;
+    font-family: dryBrush;
+    font-size: 12px;
+    height: 50px;
+    padding: 0 16px;
+    transition: background 0.3s ease-in-out;
+    width: 50%;
+}
+
+.form-item input:focus {
+    outline: none;
+
+}
+.button{
+
+background: #1b2228;
+
+color: white;
+
+height: 30px;
+
+width: 80px;
+
+font-family: 'Poiret One', cursive;
+
+}
+textarea{
+    font-family: dryBrush;
+    padding: 10px;
+    margin: auto;
+
+}
+
+#portfolio img{
+margin: auto;
+
+    opacity: .5;
+}
+
+#portfolio img:hover{
+opacity: 1;
+}
+
+#portfolio #bg-orange{
+background-color: peachpuff;
+    padding:20px;
+}
+
+#portfolio #bg-yellow{
+background-color:#e0e083;
+    padding:20px;
+}

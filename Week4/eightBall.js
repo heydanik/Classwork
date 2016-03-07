@@ -3,8 +3,13 @@ var answers = [
 
 document.getElementById('answerButton').onclick = function (){
     var answer = answers[Math.floor(Math.random()* answers.length)];
+<<<<<<< HEAD
     document.getElementById('eightBall').innerHTML = answer;
     document.getElementById('eightBall').effect("shake");
+=======
+    document.getElementById('span').innerHTML = answer;
+
+>>>>>>> origin/master
 };
 
 

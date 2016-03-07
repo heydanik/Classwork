@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type = "text/javascript"
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        
+    </head>
+ <body>
+<div id="container">
+    <div id ="eightBall"><span id="span"></span></div>
+    <input type="text" placeholder="What do you want to know?">
+    <button id="answerButton">Click Me</button>
+</div>
+ </body>   
+
+   <script>
+$( '#answerButton' ).click(function() {
+  $( "#eightBall" ).effect( "shake",{times:4}, 1000 );
+});
+</script>
+<script src="eightBall.js"></script>   
+</html>

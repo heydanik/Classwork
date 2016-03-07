@@ -14,6 +14,10 @@ function tipUsername() {
 }
 var info = document.getElementByClassName('info');
 for (var i =0; i < infoElements.length; i++) info.push(infoElements[i].value);
+if (info.length < 5){
+elMsg.innerHTML = "Stop. Hammertime."} else {
+    elMsg.innerHTML = "";}
+
 var el = document.getElementById('username');     
 var elMsg = document.getElementById('feedback');  
 

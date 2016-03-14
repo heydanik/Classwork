@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1, h3{
     display: block;
     text-align: center;
@@ -37,3 +38,48 @@ h1, h3{
     padding: 2px;
     margin: auto;
 }
+=======
+#container{
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: aquamarine;
+    font-family: helvetica;
+
+}
+#newItem{
+height: 25px;
+text-align: center;
+    font-size: 14px;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+   
+}
+
+button{
+    background-color: bisque;
+    font-family: helvetica;
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+}
+#addItem{
+    background-color:burlywood;
+    font-family: helvetica;
+    padding: 10px;
+}
+
+.checkbox, .delete{
+background-color: darkturquoise;
+    width: 40px;
+    margin: 0 5px 0 5px;
+  
+}
+
+>>>>>>> origin/gh-pages

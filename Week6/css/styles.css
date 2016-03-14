@@ -1,44 +1,3 @@
-<<<<<<< HEAD
-h1, h3{
-    display: block;
-    text-align: center;
-    margin: auto;
-    color:darkslategrey;
-    font-family: helvetica;
-}
-
-#container{
-    margin: auto;
-    width: 600px;
-    height: 600px;
-    background-color: azure;
-    text-align: center;
-    border: double 3px black;
-   
-}
-
-#submit {
-    display: inline-block;
-    height:20px;
-    width:70px;
-    background-color:#b5b0b0;
-    font-family:arial;
-    font-weight:bold;
-    font-size: 12px;
-    border-radius: 5px;
-    text-align:center;
-    margin-top:2px;
-}
-
-#list {
-    font-family:helvetica;
-    display: inline;
-    list-style-type: none;
-    font-size: 15px;
-    padding: 2px;
-    margin: auto;
-}
-=======
 #container{
     width: 600px;
     height: 600px;
@@ -53,12 +12,15 @@ h1, h3{
 height: 25px;
 text-align: center;
     font-size: 14px;
+
 }
 
 ul li{
     list-style-type: none;
     padding: 10px;
     margin: 5px;
+    color: #1b425a;
+    font-family: futura;
    
 }
 
@@ -73,6 +35,7 @@ button{
     background-color:burlywood;
     font-family: helvetica;
     padding: 10px;
+
 }
 
 .checkbox, .delete{
@@ -82,4 +45,3 @@ background-color: darkturquoise;
   
 }
 
->>>>>>> origin/gh-pages

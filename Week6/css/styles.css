@@ -8,19 +8,36 @@
     font-family: helvetica;
 
 }
+#newItem{
+height: 25px;
+text-align: center;
+    font-size: 14px;
+}
 
-ul{
+ul li{
     list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+   
 }
 
 button{
     background-color: bisque;
     font-family: helvetica;
-    width: 175px;
-    height: 35px;
-    font-size: 15px;
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
 }
 #addItem{
     background-color:burlywood;
     font-family: helvetica;
+    padding: 10px;
 }
+
+.checkbox, .delete{
+background-color: darkturquoise;
+    width: 40px;
+    margin: 0 5px 0 5px;
+  
+}
+

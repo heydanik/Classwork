@@ -1,0 +1,26 @@
+#container{
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: aquamarine;
+    font-family: helvetica;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    background-color: bisque;
+    font-family: helvetica;
+    width: 175px;
+    height: 35px;
+    font-size: 15px;
+}
+#addItem{
+    background-color:burlywood;
+    font-family: helvetica;
+}

@@ -1,0 +1,39 @@
+h1, h3{
+    display: block;
+    text-align: center;
+    margin: auto;
+    color:darkslategrey;
+    font-family: helvetica;
+}
+
+#container{
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background-color: azure;
+    text-align: center;
+    border: double 3px black;
+   
+}
+
+#submit {
+    display: inline-block;
+    height:20px;
+    width:70px;
+    background-color:#b5b0b0;
+    font-family:arial;
+    font-weight:bold;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align:center;
+    margin-top:2px;
+}
+
+#list {
+    font-family:helvetica;
+    display: inline;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 2px;
+    margin: auto;
+}

@@ -1,0 +1,17 @@
+#container{
+    margin: auto;
+    display: block;
+    background-color: #c6b69a;
+    padding: 10px;
+    border: 6px double black;
+    font-family: monospace;
+    
+}
+
+body{
+    text-align: center;
+}
+
+input{
+    border:2px solid black;
+}

@@ -79,3 +79,8 @@ p{
     color:#431d1d;
     font-size: 20px;
 }
+.emoji {
+    height:25px;
+    width:25px;
+    display: inline;
+}

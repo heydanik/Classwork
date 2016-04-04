@@ -1,5 +1,5 @@
 #input{
-    width:700px;
+    width:800px;
     height: 100%;
     text-align: center;
     margin:auto;
@@ -69,4 +69,13 @@ h3{
     background-color: #431d1d;
     color:white;
     font-size:18px;
+}
+p{
+    display:inline-block;
+    margin-right:-10px;
+    margin-left: 15px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color:brown;
+    font-size: 20px;
 }

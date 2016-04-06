@@ -17,8 +17,6 @@ $(document).ready(function(){
     $("#ten").append($("#tenth").val());
 
     $("#page").show();
-
-    // empty the form's values
    
     $("#input").hide();
       

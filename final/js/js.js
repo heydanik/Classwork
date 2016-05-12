@@ -8,29 +8,30 @@ $(document).ready(function(){
     var cw = 20;
 	var d;
 	var snakeArray;
+    var game_loop;
     
-    var lose = [];
-	lose[0] = "You lose";
-	lose[1] = "The wall is better than you";
-	lose[2] = "Buy some glasses";
-	lose[3] = "Ouch";
+
     
-	function init()
-	{
+	$("#start").click(function init()
+	{  
+        $("#msg").text("Click Arrow keys");
 		d = "";
 		makeSnake();
 		makeFood(); 
         if(typeof game_loop != "undefined") clearInterval(game_loop);  
         game_loop = setInterval(color, 55);
-	}
-	init();
+    
+        
+	});
+
     
     function gameover() {
-         clearInterval(game_loop);
+         check_collision;
          var text = document.getElementById("msg");
-          text.innerHTML = 
-         lose[Math.floor(Math.random() * lose.length)];
-        
+         $("#start").text("Replay?");
+         text.innerHTML = "You lose";
+        clearInterval(game_loop);
+      
     }
     
     function makeFood()
@@ -47,6 +48,7 @@ $(document).ready(function(){
             for(var i = length-1; i>=0; i--)
 		{
 			snakeArray.push({x: i, y:0});
+            
 		}
 	}
 
@@ -54,7 +56,7 @@ $(document).ready(function(){
 	{  
         var nx = snakeArray[0].x;
 		var ny = snakeArray[0].y;
-        
+       
 		ctx.fillStyle = "#ad9d9d";
 		ctx.fillRect(0, 0, w, h);
 		ctx.strokeStyle = "black";		
@@ -64,11 +66,10 @@ $(document).ready(function(){
 		else if(d == "left") nx--;		
 		else if(d == "down") ny++;
 		
-		if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snakeArray))
-		{   init();
-			
-            
+		if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw)
+		{     gameover();
 			return;
+            
           
 		}
 
@@ -96,7 +97,7 @@ $(document).ready(function(){
 			paint_cell(c.x, c.y);
 		}
 
-		paint_cell(food.x, food.y);
+		paint_food(food.x, food.y);
 
 	
 	}
@@ -108,6 +109,14 @@ $(document).ready(function(){
 		ctx.strokeStyle = "black";
 		ctx.strokeRect(x*cw, y*cw, cw, cw);
 	}
+    
+    function paint_food(x, y)
+	{
+		ctx.fillStyle = "red";
+		ctx.fillRect(x*cw, y*cw, cw, cw);
+		ctx.strokeStyle = "black";
+		ctx.strokeRect(x*cw, y*cw, cw, cw);
+	}
 	
 	function check_collision(x, y, array)
 	{
@@ -115,11 +124,14 @@ $(document).ready(function(){
 		for(var i = 0; i < array.length; i++)
 		{
 			if(array[i].x == x && array[i].y == y)
+               
 			 return true;
+            
+            
             
 		}
 		return false;
-  
+
 	}
 	
 
